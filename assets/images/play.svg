@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="16px" viewBox="0 0 12 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Triangle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI-kit" transform="translate(-850.000000, -427.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Buttons" transform="translate(128.000000, 180.000000)">
+                <g id="Group-2" transform="translate(687.000000, 215.000000)">
+                    <path d="M43.1443844,35.8752219 L48.3272477,43.36158 C48.9559797,44.2697485 48.7294517,45.5156524 47.8212833,46.1443844 C47.4868082,46.3759441 47.0896723,46.5 46.6828633,46.5 L36.3171367,46.5 C35.2125672,46.5 34.3171367,45.6045695 34.3171367,44.5 C34.3171367,44.0931911 34.4411926,43.6960552 34.6727523,43.36158 L39.8556156,35.8752219 C40.4843476,34.9670535 41.7302515,34.7405255 42.63842,35.3692575 C42.8361187,35.5061258 43.007516,35.6775232 43.1443844,35.8752219 Z" id="Triangle" transform="translate(41.500000, 40.000000) rotate(-270.000000) translate(-41.500000, -40.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

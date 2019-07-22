@@ -10,6 +10,16 @@
 .description {
 }
 
+.blue-background {
+  background: #7598FF;
+  padding: 20px;
+}
+
+.gray-background {
+  background: #F2F3F7;
+  padding: 20px;
+}
+
 @include desktop {
   
 }
