@@ -2,7 +2,7 @@
   display: block;
   background: #7598ff;
   color: $color-white;
-  max-width: 257px;
+  width: 100%;
   padding: 21px 25px;
   border-radius: 10px;
   text-decoration: none;
@@ -20,6 +20,7 @@
 
   &.disabled {
     background-color: #d2d6e5 !important;
+    pointer-events: none;
 
     &.order {
       background: url("../images/order-book.svg") 92% no-repeat, #d2d6e5;
@@ -42,6 +43,8 @@
   transition: 300ms;
 
   &.disabled {
+    pointer-events: none;
+
     &::after {
       opacity: 0.5;
     }
@@ -115,6 +118,8 @@
       }
 
       &.disabled {
+        pointer-events: none;
+
         background: $color-white !important;
       }
     }
@@ -172,6 +177,8 @@
 
       &.disabled {
         background: #d2d6e5 !important;
+        pointer-events: none;
+
         &:hover {
           &::after {
             filter: none !important;

@@ -7,7 +7,10 @@
 @import "styles/support/mixins";
 @import "styles/support/grid";
 @import "styles/support/common";
-@import "styles/support/buttons";
+
+@import "styles/components/buttons";
+@import "styles/components/form";
+@import "styles/components/modals";
 
 html {
   position: relative;
@@ -16,8 +19,22 @@ html {
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
+
+  &.overlay {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 5;
+      background: black;
+      opacity: 0.2;
+    }
+  }
 }
 
 @include tablet {

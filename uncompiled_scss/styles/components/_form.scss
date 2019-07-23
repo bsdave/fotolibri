@@ -1,0 +1,60 @@
+.input-group {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.label {
+  position: absolute;
+  top: -30px;
+  display: inline-block;
+  font-size: 15px;
+  color: #27292d;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 21px 25px 22px;
+  border-radius: 7px;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #e2e5ed;
+  color: #27292d;
+  font-size: 15px;
+  background: $color-white;
+  margin-bottom: 10px;
+
+  &::placeholder {
+    font-size: 15px;
+    color: #adb1be;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid #98b2ff;
+  }
+
+  &.disabled {
+    background: #f2f3f7;
+    pointer-events: none;
+  }
+
+  &.has-error {
+    border: 1px solid #FF9898;
+  }
+}
+
+.error {
+  display: inline-block;
+  color: #FF9898;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+@include desktop {
+  .input-group {
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+}

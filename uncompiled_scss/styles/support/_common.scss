@@ -5,9 +5,18 @@
 }
 
 .title {
+  font-weight: normal;
+  font-size: 25px;
+  color: #27292D;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .description {
+  font-size: 13px;
+  color: #767A85;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .blue-background {
@@ -21,5 +30,11 @@
 }
 
 @include desktop {
+  .title {
+    font-size: 35px;
+  }
   
+  .description {
+    font-size: 15px;
+  }
 }

@@ -1,0 +1,55 @@
+.modal-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10000px;
+  z-index: -1;
+
+  .modal {
+    position: relative;
+    background: url("../images/white-bird-bg.svg") top left no-repeat, #f2f3f7;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 10vh;
+    box-shadow: 0 53px 100px 0 rgba(39, 31, 45, 0.36);
+
+    .modal-header {
+      text-align: center;
+      margin-bottom: 60px;
+
+      .close-modal {
+        display: inline-block;
+        cursor: pointer;
+        margin-bottom: 10px;
+
+        &::before {
+          content: url("../images/close-x.svg");
+        }
+      }
+    }
+  }
+
+  &.opened {
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+  }
+}
+
+@include desktop {
+  .modal-box {
+    .modal {
+      padding: 60px;
+
+      .modal-header {
+        margin-bottom: 80px;
+
+        .close-modal {
+          position: absolute;
+          top: 25px;
+          right: 25px;
+        }
+      }
+    }
+  }
+}

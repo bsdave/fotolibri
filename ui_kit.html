@@ -56,6 +56,82 @@
     </div>
   </div>
 
+  <div class="fields-box">
+    <div class="container">
+      <div class="box-body">
+        <div class="row">
+          <div class="col-3">
+            <div class="box-header">
+              <h2 class="title">Fields</h2>
+            </div>
+
+            <div class="input-group">
+              <label class="label" for="name">Ваше имя</label>
+              <input class="input" type="text" id="name" placeholder="Например Максим">
+              <div class="errors"></div>
+            </div>
+
+            <div class="input-group">
+              <label class="label" for="name">Ваше имя</label>
+              <input class="input has-error" type="text" id="name" placeholder="Например Максим">
+              <div class="errors">
+                <span class="error">Недопустимые символы</span>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label class="label" for="name">Ваше имя</label>
+              <input class="input disabled" type="text" id="name" placeholder="Например Максим">
+              <div class="errors"></div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="box-header">
+              <h2 class="title">Модальные окна</h2>
+            </div>
+
+            <a href="#" class="button open-modal" data-modal-id="order-modal">Форма</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-box" id="order-modal">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 offset-md-4">
+          <div class="modal">
+            <div class="modal-header">
+              <span class="close-modal"></span>
+              <h3 class="title">Пример формы</h3>
+              <p class="description">Подзаголовок для вашего окна</p>
+            </div>
+
+            <div class="modal-body">
+              <form action="#">
+                <div class="input-group">
+                  <label class="label" for="name">Ваше имя</label>
+                  <input class="input" type="text" id="name" placeholder="Например Максим">
+                  <div class="errors"></div>
+                </div>
+
+                <div class="input-group">
+                  <label class="label" for="name">Почта</label>
+                  <input class="input" type="text" id="name" placeholder="mail@example.com">
+                  <div class="errors"></div>
+                </div>
+
+                <button class="button">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
