@@ -1,0 +1,63 @@
+.header {
+  background: $color-white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+
+  .navigation {
+    display: none;
+  }
+}
+
+@include tablet {
+  .header {
+    padding: 10px 40px;
+    .navigation {
+      display: flex;
+      align-items: center;
+
+      .menu-link {
+        text-decoration: none;
+        display: block;
+        color: #767a85;
+        font-size: 15px;
+        margin-left: 10px;
+        transition: 300ms;
+
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+
+        &:last-child {
+          border-left: 1px solid #f4f4f4;
+          padding-left: 10px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .header {
+    .navigation {
+      .menu-link {
+        margin-left: 25px;
+        transition: 300ms;
+
+        &:not(:last-child) {
+          margin-right: 25px;
+        }
+
+        &:last-child {
+          padding-left: 25px;
+        }
+
+        &:hover {
+          color: #564545;
+        }
+      }
+    }
+  }
+}

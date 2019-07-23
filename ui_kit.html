@@ -14,6 +14,20 @@
 </head>
 
 <body>
+  <div class="container">
+    <header class="header">
+      <a href="#" class="main-logo"></a>
+
+      <nav class="navigation">
+        <a href="#" class="menu-link">Как это работает</a>
+        <a href="#" class="menu-link">Про фотокнигу</a>
+        <a href="#" class="menu-link">Отзывы клиенов</a>
+        <a href="#" class="menu-link">Свяжитесь с нами</a>
+        <a href="#" class="menu-link"><span class="image-link"></span></a>
+      </nav>
+    </header>
+  </div>
+
   <div class="buttons-box">
     <div class="container">
       <div class="box-header">
@@ -46,7 +60,6 @@
             <div class="gray-background">
               <a href="#" class="round-button play"></a>
               <a href="#" class="round-button play disabled"></a>
-
             </div>
           </div>
 
@@ -92,6 +105,8 @@
             </div>
 
             <a href="#" class="button open-modal" data-modal-id="order-modal">Форма</a>
+            <a href="#" class="button open-modal" data-modal-id="error-modal">Ошибка</a>
+            <a href="#" class="button open-modal" data-modal-id="success-modal">Успех</a>
           </div>
         </div>
       </div>
@@ -101,7 +116,7 @@
   <div class="modal-box" id="order-modal">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-4 offset-md-4">
+        <div class="col-12 col-md-6 offset-md-3">
           <div class="modal">
             <div class="modal-header">
               <span class="close-modal"></span>
@@ -125,6 +140,38 @@
 
                 <button class="button">Отправить</button>
               </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-box" id="error-modal">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 offset-md-3">
+          <div class="modal error">
+            <div class="modal-header">
+              <span class="close-modal"></span>
+              <h3 class="title">Произошла ошибка</h3>
+              <p class="description">Нам не удалось отправить Ваше сообщение, попробуйте еще раз.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-box" id="success-modal">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 offset-md-3">
+          <div class="modal success">
+            <div class="modal-header">
+              <span class="close-modal"></span>
+              <h3 class="title">Успешно отправлено</h3>
+              <p class="description">Спасибо, мы с Вами свяжемся в течении 15 минут</p>
             </div>
           </div>
         </div>

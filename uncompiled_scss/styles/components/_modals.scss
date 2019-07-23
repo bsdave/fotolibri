@@ -6,6 +6,7 @@
   z-index: -1;
 
   .modal {
+    z-index: 15;
     position: relative;
     background: url("../images/white-bird-bg.svg") top left no-repeat, #f2f3f7;
     padding: 25px;
@@ -15,7 +16,6 @@
 
     .modal-header {
       text-align: center;
-      margin-bottom: 60px;
 
       .close-modal {
         display: inline-block;
@@ -26,6 +26,19 @@
           content: url("../images/close-x.svg");
         }
       }
+    }
+
+    .modal-body {
+      margin-top: 60px;
+    }
+
+    &.error {
+      background: url("../images/error-modal-bg.svg") center no-repeat, #fff;
+      background-size: contain;
+    }
+
+    &.success {
+      background: url("../images/success-modal-bg.svg") left bottom no-repeat, #fff;
     }
   }
 
@@ -42,13 +55,15 @@
       padding: 60px;
 
       .modal-header {
-        margin-bottom: 80px;
-
         .close-modal {
           position: absolute;
           top: 25px;
           right: 25px;
         }
+      }
+
+      .modal-body {
+        margin-top: 80px;
       }
     }
   }

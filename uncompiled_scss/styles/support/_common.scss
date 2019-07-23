@@ -29,6 +29,16 @@
   padding: 20px;
 }
 
+.main-logo {
+  display: block;
+  height: 61px;
+  width: 61px;
+  background: url('../images/fotolibri-logo.svg') left center no-repeat;
+  background-size: cover;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
 @include desktop {
   .title {
     font-size: 35px;
@@ -36,5 +46,10 @@
   
   .description {
     font-size: 15px;
+  }
+
+  .main-logo {
+    height: 69px;
+    width: 187px;
   }
 }

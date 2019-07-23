@@ -781,8 +781,11 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .gray-background { background: #F2F3F7; padding: 20px; }
 
+.main-logo { display: block; height: 61px; width: 61px; background: url("../images/fotolibri-logo.svg") left center no-repeat; background-size: cover; flex-shrink: 0; flex-grow: 0; }
+
 @media (min-width: 992px) { .title { font-size: 35px; }
-  .description { font-size: 15px; } }
+  .description { font-size: 15px; }
+  .main-logo { height: 69px; width: 187px; } }
 
 .button { display: block; background: #7598ff; color: #FFF; width: 100%; padding: 21px 25px; border-radius: 10px; text-decoration: none; font-size: 15px; font-weight: 600; text-align: center; transition: 300ms; margin-bottom: 15px; }
 
@@ -855,19 +858,40 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .modal-box { position: absolute; left: 0; right: 0; top: -10000px; z-index: -1; }
 
-.modal-box .modal { position: relative; background: url("../images/white-bird-bg.svg") top left no-repeat, #f2f3f7; padding: 25px; border-radius: 10px; margin-top: 10vh; box-shadow: 0 53px 100px 0 rgba(39, 31, 45, 0.36); }
+.modal-box .modal { z-index: 15; position: relative; background: url("../images/white-bird-bg.svg") top left no-repeat, #f2f3f7; padding: 25px; border-radius: 10px; margin-top: 10vh; box-shadow: 0 53px 100px 0 rgba(39, 31, 45, 0.36); }
 
-.modal-box .modal .modal-header { text-align: center; margin-bottom: 60px; }
+.modal-box .modal .modal-header { text-align: center; }
 
 .modal-box .modal .modal-header .close-modal { display: inline-block; cursor: pointer; margin-bottom: 10px; }
 
 .modal-box .modal .modal-header .close-modal::before { content: url("../images/close-x.svg"); }
 
+.modal-box .modal .modal-body { margin-top: 60px; }
+
+.modal-box .modal.error { background: url("../images/error-modal-bg.svg") center no-repeat, #fff; background-size: contain; }
+
+.modal-box .modal.success { background: url("../images/success-modal-bg.svg") left bottom no-repeat, #fff; }
+
 .modal-box.opened { top: 0; bottom: 0; z-index: 10; }
 
 @media (min-width: 992px) { .modal-box .modal { padding: 60px; }
-  .modal-box .modal .modal-header { margin-bottom: 80px; }
-  .modal-box .modal .modal-header .close-modal { position: absolute; top: 25px; right: 25px; } }
+  .modal-box .modal .modal-header .close-modal { position: absolute; top: 25px; right: 25px; }
+  .modal-box .modal .modal-body { margin-top: 80px; } }
+
+.header { background: #FFF; display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+
+.header .navigation { display: none; }
+
+@media (min-width: 576px) { .header { padding: 10px 40px; }
+  .header .navigation { display: flex; align-items: center; }
+  .header .navigation .menu-link { text-decoration: none; display: block; color: #767a85; font-size: 15px; margin-left: 10px; transition: 300ms; }
+  .header .navigation .menu-link:not(:last-child) { margin-right: 10px; }
+  .header .navigation .menu-link:last-child { border-left: 1px solid #f4f4f4; padding-left: 10px; margin-left: 0; } }
+
+@media (min-width: 992px) { .header .navigation .menu-link { margin-left: 25px; transition: 300ms; }
+  .header .navigation .menu-link:not(:last-child) { margin-right: 25px; }
+  .header .navigation .menu-link:last-child { padding-left: 25px; }
+  .header .navigation .menu-link:hover { color: #564545; } }
 
 html { position: relative; min-height: 100vh; box-sizing: border-box; }
 
