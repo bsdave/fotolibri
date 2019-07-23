@@ -791,6 +791,8 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .button.order { background: url("../images/order-book.svg") 92% no-repeat, #7598ff; -moz-text-align-last: left; text-align-last: left; }
 
+.button.hand { background: url("../images/hand.svg") 92% no-repeat, #7598ff; -moz-text-align-last: left; text-align-last: left; }
+
 .button.disabled { background-color: #d2d6e5 !important; pointer-events: none; }
 
 .button.disabled.order { background: url("../images/order-book.svg") 92% no-repeat, #d2d6e5; }
@@ -810,6 +812,12 @@ input[type="number"] { -moz-appearance: textfield; }
 .round-button.play::after { content: url("../images/play.svg"); margin: auto; transition: 300ms; }
 
 .round-button.play:not(.disabled)::before { transition: 200ms; content: ""; display: block; width: 70px; height: 70px; border: 1px solid #8ba8fc; position: absolute; margin: 5px; border-radius: 50%; }
+
+.round-button.play.white { background: white; }
+
+.round-button.play.white:not(.disabled)::before { content: ""; display: block; width: 70px; height: 70px; border: 1px solid #E7E9F1; position: absolute; margin: 5px; border-radius: 50%; }
+
+.round-button.play.white::after { content: url("../images/play.svg"); margin: auto; -webkit-filter: brightness(0%); filter: brightness(0%); }
 
 .image-link { display: block; height: 28px; width: 40px; background: url("../images/image-link.svg") left top no-repeat; }
 
@@ -858,7 +866,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .modal-box { position: absolute; left: 0; right: 0; top: -10000px; z-index: -1; }
 
-.modal-box .modal { z-index: 15; position: relative; background: url("../images/white-bird-bg.svg") top left no-repeat, #f2f3f7; padding: 25px; border-radius: 10px; margin-top: 10vh; box-shadow: 0 53px 100px 0 rgba(39, 31, 45, 0.36); }
+.modal-box .modal { z-index: 15; position: relative; background: #f2f3f7; padding: 25px; border-radius: 10px; margin-top: 10vh; box-shadow: 0 53px 100px 0 rgba(39, 31, 45, 0.36); }
 
 .modal-box .modal .modal-header { text-align: center; }
 
@@ -867,6 +875,8 @@ input[type="number"] { -moz-appearance: textfield; }
 .modal-box .modal .modal-header .close-modal::before { content: url("../images/close-x.svg"); }
 
 .modal-box .modal .modal-body { margin-top: 60px; }
+
+.modal-box .modal.order { background: url("../images/white-bird-bg.svg") top left no-repeat, #f2f3f7; }
 
 .modal-box .modal.error { background: url("../images/error-modal-bg.svg") center no-repeat, #fff; background-size: contain; }
 
@@ -893,8 +903,27 @@ input[type="number"] { -moz-appearance: textfield; }
   .header .navigation .menu-link:last-child { padding-left: 25px; }
   .header .navigation .menu-link:hover { color: #564545; } }
 
+.cart { border-radius: 7px; background: #FFF; text-align: center; margin-bottom: 20px; }
+
+.cart .video-preview { display: none; }
+
+.cart .description-box { padding: 30px; }
+
+.dimension { display: flex; align-items: center; justify-content: center; margin-bottom: 5px; }
+
+.size-icon { content: url("../images/sizer.svg"); }
+
+.side-size { font-size: 18px; color: #27292d; margin-right: 15px; margin-left: 15px; }
+
+.price-string { display: inline-block; font-size: 15px; color: #767a85; margin-bottom: 20px; }
+
+.price-string .price { padding-left: 8px; font-size: 35px; color: #27292d; }
+
+@media (min-width: 992px) { .cart { border-radius: 7px; background: #FFF; text-align: center; margin-bottom: 20px; }
+  .cart .video-preview { border-top-left-radius: 7px; border-top-right-radius: 7px; display: block; background-size: cover; background-position: 0%; height: 171px; display: flex; align-items: center; justify-content: center; } }
+
 html { position: relative; min-height: 100vh; box-sizing: border-box; }
 
 body { font-family: "Raleway", sans-serif; font-size: 13px; }
 
-body.overlay::before { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: 5; background: black; opacity: 0.2; }
+body.overlay::before { content: ""; position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 5; background: black; opacity: 0.2; }

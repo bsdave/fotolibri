@@ -8,7 +8,7 @@
   .modal {
     z-index: 15;
     position: relative;
-    background: url("../images/white-bird-bg.svg") top left no-repeat, #f2f3f7;
+    background:#f2f3f7;
     padding: 25px;
     border-radius: 10px;
     margin-top: 10vh;
@@ -30,6 +30,10 @@
 
     .modal-body {
       margin-top: 60px;
+    }
+
+    &.order {
+      background: url("../images/white-bird-bg.svg") top left no-repeat, #f2f3f7;
     }
 
     &.error {

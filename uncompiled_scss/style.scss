@@ -12,6 +12,7 @@
 @import "styles/components/form";
 @import "styles/components/modals";
 @import "styles/components/header";
+@import "styles/components/carts";
 
 html {
   position: relative;
@@ -26,7 +27,7 @@ body {
   &.overlay {
     &::before {
       content: "";
-      position: absolute;
+      position: fixed;
       top: 0;
       bottom: 0;
       left: 0;
