@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Check</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#D8D8D8" opacity="0" x="0" y="0" width="20" height="20"></rect>
+        <path d="M14.7846511,6.2247619 C14.5313158,5.96026455 14.1205867,5.96026455 13.8672008,6.2247619 L8.09497466,12.3387037 L6.10745809,10.2198677 C5.85412281,9.95537037 5.44339376,9.95539683 5.1900078,10.2198677 C4.93664717,10.4843386 4.93664717,10.9131217 5.1900078,11.177619 L7.63624951,13.775291 C7.88950877,14.0397619 8.30054191,14.0395767 8.55369981,13.775291 L14.7846511,7.18253968 C15.0380117,6.91806878 15.0379864,6.48925926 14.7846511,6.2247619 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+    </g>
+</svg>

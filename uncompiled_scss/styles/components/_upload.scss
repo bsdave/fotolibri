@@ -1,0 +1,303 @@
+.upload-box {
+  .upload-head {
+    .description {
+      font-size: 15px;
+    }
+  }
+
+  .upload-body {
+    .upload-area {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 25px;
+
+      border: 1px dashed #dbdbdb;
+      border-radius: 10px;
+      height: 100%;
+
+      cursor: pointer;
+
+      .upload-image {
+        width: 40%;
+      }
+
+      .upload-text {
+        font-size: 15px;
+        text-align: center;
+
+        display: grid;
+      }
+    }
+
+    .photo-cart {
+      cursor: pointer;
+
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      transition: 300ms;
+
+      * {
+        transition: 250ms;
+      }
+
+      &:before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+      }
+
+      .choosed-photo {
+        display: none;
+      }
+
+      .delete-photo {
+        cursor: pointer;
+
+        position: absolute;
+        top: 15px;
+        right: 15px;
+
+        height: 30px;
+        width: 30px;
+
+        background: url("../images/trash.svg") 50% 48% no-repeat, white;
+        border-radius: 50%;
+
+        z-index: 30;
+      }
+
+      .photo {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      &.choosed {
+        .photo {
+          top: 5px;
+          right: 5px;
+          bottom: 30px;
+          left: 5px;
+
+          width: calc(100% - 10px);
+          height: calc(100% - 35px);
+        }
+
+        .choosed-photo {
+          position: absolute;
+          display: inline-block;
+          bottom: 10px;
+          left: 15px;
+
+          font-size: 12px;
+          color: white;
+          font-weight: 600;
+        }
+      }
+
+      .uploading-info {
+        opacity: 0;
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        background: #f2f2f2;
+
+        .percents {
+          margin-top: auto;
+          margin-right: auto;
+          margin-left: auto;
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+
+        .progress-bar {
+          margin-bottom: auto;
+        }
+      }
+
+      &.uploading {
+        .uploading-info {
+          opacity: 1;
+        }
+      }
+    }
+
+    .row > * {
+      margin-bottom: 30px;
+    }
+  }
+
+  .upload-footer {
+    .title {
+      font-size: 20px;
+    }
+
+    .colors {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -8px;
+      margin-right: -8px;
+
+      .color {
+        * {
+          transition: 300ms;
+        }
+
+        flex-shrink: 0;
+        flex-grow: 0;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-bottom: 16px;
+
+        &.choosed {
+          border: 4px solid #74c06a;
+          border-radius: 50%;
+          position: relative;
+
+          &::after {
+            content: "";
+            border-radius: 50%;
+            display: block;
+            height: 26px;
+            width: 26px;
+            background: url("../images/check.svg") center no-repeat, #74c06a;
+
+            position: absolute;
+            top: -7px;
+            right: -7px;
+            z-index: 10;
+          }
+        }
+      }
+    }
+
+    .button {
+      max-width: unset;
+    }
+  }
+}
+
+@include desktop {
+  .upload-box {
+    .upload-head {
+      .description {
+        font-size: 20px;
+      }
+    }
+
+    .upload-body {
+      .upload-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 25px;
+
+        border: 1px dashed #dbdbdb;
+        border-radius: 10px;
+        height: 100%;
+
+        cursor: pointer;
+
+        .upload-image {
+          width: 60%;
+          filter: grayscale(1);
+          opacity: 0.4;
+        }
+
+        .upload-text {
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+
+      .photo-cart {
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+
+        &:before {
+          content: "";
+          display: block;
+          padding-top: 100%;
+        }
+
+        &:after {
+          content: url("../images/check.svg");
+          position: absolute;
+          right: 22px;
+          bottom: 17px;
+          opacity: 0;
+        }
+
+        &.choosed {
+          &:after {
+            opacity: 1;
+          }
+
+          .photo {
+            bottom: 60px;
+            height: calc(100% - 65px);
+          }
+
+          .choosed-photo {
+            bottom: 20px;
+            left: 30px;
+            font-size: 15px;
+          }
+        }
+
+        .delete-photo {
+          &:hover {
+            background: url("../images/red-trash.svg") 50% 48% no-repeat, white;
+          }
+        }
+
+        .uploading-info {
+          padding: 60px;
+        }
+      }
+
+      .row > * {
+        margin-bottom: 30px;
+      }
+    }
+
+    .upload-footer {
+      .colors {
+        justify-content: space-between;
+
+        .color {
+          height: 60px;
+          width: 60px;
+        }
+      }
+
+      .button {
+        max-width: 270px;
+      }
+    }
+  }
+}

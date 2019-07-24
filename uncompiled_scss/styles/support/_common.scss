@@ -39,7 +39,27 @@
   flex-grow: 0;
 }
 
+.blue-text {
+  color: #98B2FF;
+}
+
+.only-mobile {
+  display: inline-block;
+}
+
+.only-desktop {
+  display: none;
+}
+
 @include desktop {
+  .only-mobile {
+    display: none;
+  }
+
+  .only-desktop {
+    display: inline-block;
+  }
+
   .title {
     font-size: 35px;
   }

@@ -1,8 +1,4 @@
 @media (max-width: map-get($container-max-widths, sm)) {
-  div[class^="col"] {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
 
   .mobile-dn {
     display: none;
@@ -19,10 +15,6 @@
     }
   }
 
-  .row {
-    margin-left: -25px;
-    margin-right: -25px;
-  }
 
   .contacts {
     .contact-blocks {
