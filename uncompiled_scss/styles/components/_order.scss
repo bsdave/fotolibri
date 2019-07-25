@@ -1,0 +1,72 @@
+.order-box {
+  position: relative;
+  background: url("../images/pencil.png") 200% bottom no-repeat;
+  background-size: 70%;
+  padding: 50px 0 80px;
+
+  .box-header {
+    .title,
+    .description {
+      color: white !important;
+    }
+  }
+
+  .order-body {
+    text-align: center;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transform: rotate(180deg);
+    background: url("../images/pencil.png") 200% bottom no-repeat, #7598ff;
+    background-size: 70%;
+  }
+}
+
+@include desktop {
+  .order-box {
+    position: relative;
+    background: url("../images/pencil.png") right bottom no-repeat;
+    background-size: 30%;
+    padding: 50px 0 80px;
+  
+    .box-header {
+      padding-left: 50px;
+      padding-right: 50px;
+  
+      .description {
+        padding: 0 20%;
+      }
+  
+      .title,
+      .description {
+        color: white !important;
+      }
+    }
+  
+    .order-body {
+      text-align: center;
+    }
+  
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      transform: rotate(180deg);
+      background: url("../images/pencil.png") 105% bottom no-repeat, #7598ff;
+      background-size: 30%;
+    }
+  }
+}

@@ -1039,11 +1039,11 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .choose-cover-box .covers .cover .cover-image-block::after { transition: 300ms; background: url("../images/check-gray.svg") center no-repeat; opacity: 0.3; }
 
-@media (min-width: 992px) { .choose-cover-box { position: relative; padding: 30px 0 100px; background: url("../images/leaves.svg") top right no-repeat, #f2f3f7; }
+@media (min-width: 992px) { .choose-cover-box { position: relative; padding: 30px 0 100px; background: url("../images/leaves.svg") top right no-repeat; }
   .choose-cover-box .covers .cover { cursor: pointer; }
   .choose-cover-box .covers .cover:hover .cover-image-block { top: -20px; box-shadow: 0 53px 100px 0 rgba(39, 41, 45, 0.26); }
   .choose-cover-box .covers .cover:hover .cover-image-block::after { opacity: 1; }
-  .choose-cover-box::before { content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: 0; transform: rotate(180deg); background: url("../images/leaves.svg") 105% -25px no-repeat; } }
+  .choose-cover-box::before { content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1; transform: rotate(180deg); background: url("../images/leaves.svg") 105% -25px no-repeat, #f2f3f7; } }
 
 .about-book-box { padding-top: 30px; padding-bottom: 200px; background: url("../images/gray-fabric.png") left bottom no-repeat, url("../images/white-bird-0.svg") center no-repeat; background-size: 100%, 120%; }
 
@@ -1055,7 +1055,7 @@ input[type="number"] { -moz-appearance: textfield; }
 @media (min-width: 992px) { .about-book-box { padding-top: 50px; background: url("../images/gray-fabric.png") left bottom no-repeat, url("../images/gray-book.png") right bottom no-repeat, url("../images/white-bird-0.svg") 18% center no-repeat, url("../images/white-bird-1.svg") 78% center no-repeat; background-size: 30%, 30%, 20%, 20%; }
   .about-book-box .about-book { display: flex; align-items: center; flex-direction: column; margin-top: 80px; } }
 
-.reviews-box { background: #f2f3f7; padding: 20px 0 50px; }
+.reviews-box { background: url("../images/leaves.svg") center top no-repeat, #f2f3f7; padding: 20px 0 50px; }
 
 .reviews-box .reviews-body { position: relative; background: white; border-radius: 7px; padding: 20px; }
 
@@ -1076,6 +1076,21 @@ input[type="number"] { -moz-appearance: textfield; }
 @media (min-width: 992px) { .reviews-box { background: #f2f3f7; padding: 40px 0 100px; background: url("../images/leaves.svg") center top no-repeat, #f2f3f7; background-size: 100% 100%, auto; }
   .reviews-box .reviews-body { background: white; border-radius: 7px; }
   .reviews-box .reviews-body .reviews .review { padding: 20px 100px 50px; } }
+
+.order-box { position: relative; background: url("../images/pencil.png") 200% bottom no-repeat; background-size: 70%; padding: 50px 0 80px; }
+
+.order-box .box-header .title, .order-box .box-header .description { color: white !important; }
+
+.order-box .order-body { text-align: center; }
+
+.order-box::before { content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1; transform: rotate(180deg); background: url("../images/pencil.png") 200% bottom no-repeat, #7598ff; background-size: 70%; }
+
+@media (min-width: 992px) { .order-box { position: relative; background: url("../images/pencil.png") right bottom no-repeat; background-size: 30%; padding: 50px 0 80px; }
+  .order-box .box-header { padding-left: 50px; padding-right: 50px; }
+  .order-box .box-header .description { padding: 0 20%; }
+  .order-box .box-header .title, .order-box .box-header .description { color: white !important; }
+  .order-box .order-body { text-align: center; }
+  .order-box::before { content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1; transform: rotate(180deg); background: url("../images/pencil.png") 105% bottom no-repeat, #7598ff; background-size: 30%; } }
 
 html { position: relative; min-height: 100vh; box-sizing: border-box; }
 

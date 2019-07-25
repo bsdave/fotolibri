@@ -42,7 +42,7 @@
   .choose-cover-box {
     position: relative;
     padding: 30px 0 100px;
-    background: url("../images/leaves.svg") top right no-repeat, #f2f3f7;
+    background: url("../images/leaves.svg") top right no-repeat;
 
     .covers {
       .cover {
@@ -70,9 +70,9 @@
       bottom: 0;
       left: 0;
       right: 0;
-      z-index: 0;
+      z-index: -1;
       transform: rotate(180deg);
-      background: url("../images/leaves.svg") 105% -25px no-repeat;
+      background: url("../images/leaves.svg") 105% -25px no-repeat, #f2f3f7;
     }
   }
 }
