@@ -765,27 +765,33 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .img-block { display: block; width: 100%; height: auto; }
 
-.title { font-weight: normal; font-size: 25px; color: #27292D; margin-top: 0; margin-bottom: 20px; }
+.title { font-weight: normal; font-size: 25px; color: #27292d; margin-top: 0; margin-bottom: 20px; }
 
 .title.small { font-size: 15px; margin-bottom: 10px; }
 
-.description { font-size: 13px; line-height: 20px; color: #767A85; margin-top: 0; margin-bottom: 20px; }
+.description { font-size: 13px; line-height: 20px; color: #767a85; margin-top: 0; margin-bottom: 20px; }
 
 .description.big { font-size: 15px; }
 
-.blue-background { background: #7598FF; padding: 20px; }
+.blue-background { background: #7598ff; padding: 20px; }
 
-.gray-background { background: #F2F3F7; padding: 20px; }
+.gray-background { background: #f2f3f7; padding: 20px; }
 
 .main-logo { display: block; height: 61px; width: 61px; background: url("../images/fotolibri-logo.svg") left center no-repeat; background-size: cover; flex-shrink: 0; flex-grow: 0; }
 
-.blue-text { color: #98B2FF; }
+.main-logo.small { height: 83px; width: 83px; background: url("../images/logo-small.svg") center no-repeat; }
+
+.blue-text { color: #98b2ff; }
 
 .only-mobile { display: inline-block !important; }
 
 .only-desktop { display: none !important; }
 
-.box-header { background: url("../images/square.svg") center top no-repeat; padding-top: 20px; margin-top: 30px; text-align: center; }
+.box-header { background: url("../images/square.svg") center top no-repeat; padding-top: 20px; margin-top: 30px; text-align: center; margin-bottom: 30px; }
+
+.box-header .title { margin-bottom: 12px; }
+
+.address { background: url("../images/point.svg") left center no-repeat; padding-left: 20px; }
 
 @media (min-width: 992px) { .only-mobile { display: none !important; }
   .only-desktop { display: inline-block !important; }
@@ -1003,9 +1009,9 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .progress-value { color: #fff; text-align: center; background-color: #98B2FF; transition: .3s all linear; border-radius: 1.25em; height: 12px; display: inline-block; }
 
-.first-screen-box { margin-top: -81px; padding: 100px 0 50px; background: url("../images/first-screen-bg.svg") 184px -20px no-repeat, #f2f3f7; background-size: 70%; }
+.first-screen-box { margin-top: -81px; padding: 100px 0 46px; background: url("../images/first-screen-bg.svg") 184px -20px no-repeat, #f2f3f7; background-size: 70%; }
 
-.first-screen-box .first-screen-preview { position: relative; display: flex; align-items: center; justify-content: center; }
+.first-screen-box .first-screen-preview { position: relative; display: flex; align-items: center; justify-content: center; margin-bottom: 30px; }
 
 .first-screen-box .first-screen-preview .first-screen-image { -o-object-fit: cover; object-fit: cover; -o-object-position: -40px 50%; object-position: -40px 50%; width: 110%; }
 
@@ -1016,9 +1022,11 @@ input[type="number"] { -moz-appearance: textfield; }
   .first-screen-box .features { display: flex; margin-bottom: 30px; }
   .first-screen-box .features .feature { background: url("../images/square-gray.svg") left center no-repeat; margin-right: 15px; padding-left: 20px; display: block; color: #767A85; font-size: 18px; } }
 
-.how-it-works-box { background: url("../images/bird.svg") center bottom no-repeat; padding: 80px 0; }
+.how-it-works-box { background: url("../images/bird.svg") center bottom no-repeat; padding: 20px 0 32px; }
 
-.features .feature { text-align: center; }
+.features .feature { text-align: center; margin-bottom: 28px; }
+
+.features .feature img { margin-bottom: 10px; }
 
 @media (min-width: 576px) { .how-it-works-box { background: url("../images/bird.svg") center bottom no-repeat; background-size: 50%; padding: 20px 0 40px; }
   .features .feature { text-align: center; } }
@@ -1027,11 +1035,11 @@ input[type="number"] { -moz-appearance: textfield; }
   .features .feature { padding: 0 60px; }
   .features .feature.margined { margin-top: 100px; } }
 
-.choose-cover-box { background: #f2f3f7; }
+.choose-cover-box { background: #f2f3f7; padding: 20px 0 30px; }
 
-.choose-cover-box .covers .cover { text-align: center; }
+.choose-cover-box .covers .cover { text-align: center; margin-bottom: 32px; }
 
-.choose-cover-box .covers .cover .cover-image-block { position: relative; top: 0; border: 10px solid white; margin-bottom: 20px; transition: 350ms ease-in-out; }
+.choose-cover-box .covers .cover .cover-image-block { position: relative; top: 0; border: 10px solid white; margin-bottom: 13px; transition: 350ms ease-in-out; }
 
 .choose-cover-box .covers .cover .cover-image-block::before, .choose-cover-box .covers .cover .cover-image-block::after { content: ""; display: block; height: 50px; width: 50px; position: absolute; top: -10px; right: -10px; }
 
@@ -1045,9 +1053,9 @@ input[type="number"] { -moz-appearance: textfield; }
   .choose-cover-box .covers .cover:hover .cover-image-block::after { opacity: 1; }
   .choose-cover-box::before { content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1; transform: rotate(180deg); background: url("../images/leaves.svg") 105% -25px no-repeat, #f2f3f7; } }
 
-.about-book-box { padding-top: 30px; padding-bottom: 200px; background: url("../images/gray-fabric.png") left bottom no-repeat, url("../images/white-bird-0.svg") center no-repeat; background-size: 100%, 120%; }
+.about-book-box { padding-top: 22px; padding-bottom: 186px; background: url("../images/gray-fabric.png") left bottom no-repeat, url("../images/white-bird-0.svg") center no-repeat; background-size: 100%, 120%; }
 
-.about-book-box .about-book { display: flex; align-items: center; flex-direction: column; margin-top: 50px; }
+.about-book-box .about-book { display: flex; align-items: center; flex-direction: column; margin-top: 28px; }
 
 @media (min-width: 576px) { .about-book-box { padding-top: 40px; padding-bottom: 40px; background: url("../images/gray-fabric.png") left bottom no-repeat, url("../images/gray-book.png") right bottom no-repeat, url("../images/white-bird-0.svg") 18% center no-repeat, url("../images/white-bird-1.svg") 78% center no-repeat; background-size: 30%, 30%, 20%, 20%; }
   .about-book-box .about-book { display: flex; align-items: center; flex-direction: column; margin-top: 20px; } }
@@ -1055,7 +1063,7 @@ input[type="number"] { -moz-appearance: textfield; }
 @media (min-width: 992px) { .about-book-box { padding-top: 50px; background: url("../images/gray-fabric.png") left bottom no-repeat, url("../images/gray-book.png") right bottom no-repeat, url("../images/white-bird-0.svg") 18% center no-repeat, url("../images/white-bird-1.svg") 78% center no-repeat; background-size: 30%, 30%, 20%, 20%; }
   .about-book-box .about-book { display: flex; align-items: center; flex-direction: column; margin-top: 80px; } }
 
-.reviews-box { background: url("../images/leaves.svg") center top no-repeat, #f2f3f7; padding: 20px 0 50px; }
+.reviews-box { background: url("../images/leaves.svg") center top no-repeat, #f2f3f7; padding: 20px 0 60px; }
 
 .reviews-box .reviews-body { position: relative; background: white; border-radius: 7px; padding: 20px; }
 
@@ -1065,7 +1073,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .reviews-box .reviews-body .reviews-control .reviewer-image .reviewer-img { height: 60px; width: 60px; }
 
-.reviews-box .reviews-body .reviews .review { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px 20px 50px; text-align: center; }
+.reviews-box .reviews-body .reviews .review { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 15px 0 2px; text-align: center; }
 
 .reviews-box .reviews-body .reviews .review .rating .star { display: inline-block; height: 10px; width: 10px; background: url("../images/star.svg") center no-repeat; opacity: 0.5; }
 
@@ -1073,11 +1081,15 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .reviews-box .reviews-body .reviews .review .description { font-size: 15px; }
 
+.reviews-box .reviews-body .reviews .review .title { margin-bottom: 15px; }
+
+.reviews-box .reviews-body .reviews .review .description { line-height: 25px; }
+
 @media (min-width: 992px) { .reviews-box { background: #f2f3f7; padding: 40px 0 100px; background: url("../images/leaves.svg") center top no-repeat, #f2f3f7; background-size: 100% 100%, auto; }
   .reviews-box .reviews-body { background: white; border-radius: 7px; }
   .reviews-box .reviews-body .reviews .review { padding: 20px 100px 50px; } }
 
-.order-box { position: relative; background: url("../images/pencil.png") 200% bottom no-repeat; background-size: 70%; padding: 50px 0 80px; }
+.order-box { position: relative; background: url("../images/pencil.png") 200% bottom no-repeat; background-size: 70%; padding: 22px 0 33px; }
 
 .order-box .box-header .title, .order-box .box-header .description { color: white !important; }
 
@@ -1091,6 +1103,26 @@ input[type="number"] { -moz-appearance: textfield; }
   .order-box .box-header .title, .order-box .box-header .description { color: white !important; }
   .order-box .order-body { text-align: center; }
   .order-box::before { content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1; transform: rotate(180deg); background: url("../images/pencil.png") 105% bottom no-repeat, #7598ff; background-size: 30%; } }
+
+.footer { padding: 60px 30px 85px; background: url("../images/white-bird-0.svg") -30% top no-repeat, url("../images/white-bird-1.svg") 130% bottom no-repeat, #f2f3f7; background-size: 50%, 50%, auto; }
+
+.footer .footer-centered { display: flex; flex-direction: column; align-content: center; align-items: center; }
+
+.footer .footer-logo { margin-bottom: 10px; }
+
+.footer .footer-menu { padding: 23px 5px 7px; margin-bottom: 30px; border-bottom: 1px solid #e3e6ef; width: 100%; display: flex; flex-direction: column; align-content: center; align-items: center; }
+
+.footer .footer-menu .footer-link { display: block; color: #767a85; text-decoration: none; font-size: 15px; margin-bottom: 27px; }
+
+.footer .bottom { position: absolute; bottom: 10px; right: 0; left: 0; text-align: center; }
+
+.footer .bottom .copyright { color: #adb1bc; font-size: 13px; }
+
+@media (min-width: 992px) { .footer { background: url("../images/white-bird-0.svg") 90% 30% no-repeat, url("../images/white-bird-1.svg") 10% 150% no-repeat, #f2f3f7; background-size: 200px, 230px, auto; }
+  .footer .footer-menu { padding: 20px 5px; margin-bottom: 30px; border-bottom: 1px solid #e3e6ef; width: 100%; text-align: center; display: flex; flex-direction: row; align-content: center; justify-content: center; align-items: center; }
+  .footer .footer-menu .footer-link { display: inline-block; color: #767a85; text-decoration: none; font-size: 15px; margin-bottom: 15px; margin-right: 20px; margin-left: 20px; transition: 300ms; }
+  .footer .footer-menu .footer-link:hover { color: #564545; }
+  .footer .bottom .copyright { font-size: 15px; } }
 
 html { position: relative; min-height: 100vh; box-sizing: border-box; }
 

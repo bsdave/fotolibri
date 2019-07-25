@@ -7,7 +7,7 @@
 .title {
   font-weight: normal;
   font-size: 25px;
-  color: #27292D;
+  color: #27292d;
   margin-top: 0;
   margin-bottom: 20px;
 
@@ -20,7 +20,7 @@
 .description {
   font-size: 13px;
   line-height: 20px;
-  color: #767A85;
+  color: #767a85;
   margin-top: 0;
   margin-bottom: 20px;
 
@@ -30,12 +30,12 @@
 }
 
 .blue-background {
-  background: #7598FF;
+  background: #7598ff;
   padding: 20px;
 }
 
 .gray-background {
-  background: #F2F3F7;
+  background: #f2f3f7;
   padding: 20px;
 }
 
@@ -43,14 +43,20 @@
   display: block;
   height: 61px;
   width: 61px;
-  background: url('../images/fotolibri-logo.svg') left center no-repeat;
+  background: url("../images/fotolibri-logo.svg") left center no-repeat;
   background-size: cover;
   flex-shrink: 0;
   flex-grow: 0;
+
+  &.small {
+    height: 83px;
+    width: 83px;
+    background: url("../images/logo-small.svg") center no-repeat;
+  }
 }
 
 .blue-text {
-  color: #98B2FF;
+  color: #98b2ff;
 }
 
 .only-mobile {
@@ -62,10 +68,20 @@
 }
 
 .box-header {
-  background: url('../images/square.svg') center top no-repeat;
+  background: url("../images/square.svg") center top no-repeat;
   padding-top: 20px;
   margin-top: 30px;
   text-align: center;
+  margin-bottom: 30px;
+  
+  .title {
+    margin-bottom: 12px;
+  }
+}
+
+.address {
+  background: url("../images/point.svg") left center no-repeat;
+  padding-left: 20px;
 }
 
 @include desktop {
@@ -85,7 +101,7 @@
       margin-bottom: 15px;
     }
   }
-  
+
   .description {
     font-size: 15px;
     line-height: 25px;

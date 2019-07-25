@@ -1,7 +1,7 @@
 .reviews-box {
   background: url('../images/leaves.svg') center top no-repeat, #f2f3f7;
 
-  padding: 20px 0 50px;
+  padding: 20px 0 60px;
 
   .reviews-body {
     position: relative;
@@ -30,7 +30,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 20px 20px 50px;
+        padding: 15px 0 2px;
         text-align: center;
 
         .rating {
@@ -49,6 +49,14 @@
 
         .description {
           font-size: 15px;
+        }
+
+        .title {
+          margin-bottom: 15px;
+        }
+
+        .description {
+          line-height: 25px;
         }
       }
     }

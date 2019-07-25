@@ -1,6 +1,6 @@
 .first-screen-box {
   margin-top: -81px;
-  padding: 100px 0 50px;
+  padding: 100px 0 46px;
   background: url("../images/first-screen-bg.svg") 184px -20px no-repeat, #f2f3f7;
   background-size: 70%;
 
@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 
     .first-screen-image {
       object-fit: cover;

@@ -1,11 +1,16 @@
 .how-it-works-box {
   background: url("../images/bird.svg") center bottom no-repeat;
-  padding: 80px 0;
+  padding: 20px 0 32px;
 }
 
 .features {
   .feature {
     text-align: center;
+    margin-bottom: 28px;
+
+    img {
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -28,7 +33,7 @@
     background: url("../images/bird.svg") center bottom no-repeat;
     padding: 80px 0;
   }
-  
+
   .features {
     .feature {
       padding: 0 60px;
