@@ -1,0 +1,52 @@
+.about-book-box {
+  padding-top: 30px;
+  padding-bottom: 200px;
+  background: url("../images/gray-fabric.png") left bottom no-repeat, url("../images/white-bird-0.svg") center no-repeat;
+  background-size: 100%, 120%;
+
+  .about-book {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 50px;
+  }
+}
+
+@include tablet {
+  .about-book-box {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    background: url("../images/gray-fabric.png") left bottom no-repeat,
+      url("../images/gray-book.png") right bottom no-repeat, url("../images/white-bird-0.svg") 18% center no-repeat,
+      url("../images/white-bird-1.svg") 78% center no-repeat;
+    background-size: 30%, 30%, 20%, 20%;
+
+    .about-book {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      margin-top: 20px;
+    }
+  }
+}
+
+@include desktop {
+  .about-book-box {
+    padding-top: 50px;
+    background: url("../images/gray-fabric.png") left bottom no-repeat,
+      url("../images/gray-book.png") right bottom no-repeat, url("../images/white-bird-0.svg") 18% center no-repeat,
+      url("../images/white-bird-1.svg") 78% center no-repeat;
+    background-size: 30%, 30%, 20%, 20%;
+
+    .about-book {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      margin-top: 80px;
+    }
+  }
+}
