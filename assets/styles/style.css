@@ -942,7 +942,11 @@ input[type="number"] { -moz-appearance: textfield; }
 @media (min-width: 992px) { .cart { border-radius: 7px; background: #FFF; text-align: center; margin-bottom: 20px; }
   .cart .video-preview { border-top-left-radius: 7px; border-top-right-radius: 7px; display: block; background-size: cover; background-position: 0%; height: 171px; display: flex; align-items: center; justify-content: center; } }
 
+.upload-box .upload-head { margin-top: 15px; margin-bottom: 40px; }
+
 .upload-box .upload-head .description { font-size: 15px; }
+
+.upload-box .upload-body { margin-bottom: 30px; }
 
 .upload-box .upload-body .upload-area { display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 25px; border: 1px dashed #dbdbdb; border-radius: 10px; height: 100%; cursor: pointer; }
 
@@ -976,9 +980,11 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .upload-box .upload-body .row > * { margin-bottom: 30px; }
 
+.upload-box .upload-footer { padding-bottom: 20px; }
+
 .upload-box .upload-footer .title { font-size: 20px; }
 
-.upload-box .upload-footer .colors { display: flex; flex-wrap: wrap; margin-left: -8px; margin-right: -8px; }
+.upload-box .upload-footer .colors { display: flex; flex-wrap: wrap; margin-left: -8px; margin-right: -8px; margin-bottom: 30px; }
 
 .upload-box .upload-footer .colors .color { flex-shrink: 0; flex-grow: 0; border-radius: 50%; height: 50px; width: 50px; cursor: pointer; margin-left: 8px; margin-right: 8px; margin-bottom: 16px; }
 

@@ -1,11 +1,16 @@
 .upload-box {
   .upload-head {
+    margin-top: 15px;
+    margin-bottom: 40px;
+
     .description {
       font-size: 15px;
     }
   }
 
   .upload-body {
+    margin-bottom: 30px;
+
     .upload-area {
       display: flex;
       align-items: center;
@@ -146,6 +151,8 @@
   }
 
   .upload-footer {
+    padding-bottom: 20px;
+
     .title {
       font-size: 20px;
     }
@@ -155,6 +162,7 @@
       flex-wrap: wrap;
       margin-left: -8px;
       margin-right: -8px;
+      margin-bottom: 30px;
 
       .color {
         flex-shrink: 0;
