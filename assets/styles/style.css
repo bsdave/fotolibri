@@ -777,6 +777,8 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .description { font-size: 13px; line-height: 20px; color: #767A85; margin-top: 0; margin-bottom: 20px; }
 
+.description.big { font-size: 15px; }
+
 .blue-background { background: #7598FF; padding: 20px; }
 
 .gray-background { background: #F2F3F7; padding: 20px; }
@@ -796,6 +798,7 @@ input[type="number"] { -moz-appearance: textfield; }
   .title { font-size: 35px; }
   .title.small { font-size: 18px; margin-bottom: 15px; }
   .description { font-size: 15px; line-height: 25px; }
+  .description.big { font-size: 18px; }
   .main-logo { height: 69px; width: 187px; } }
 
 .button { display: inline-block; background: #7598ff; color: #FFF; width: 100%; max-width: 270px; padding: 21px 25px; border-radius: 10px; text-decoration: none; font-size: 15px; font-weight: 600; text-align: center; transition: 300ms; margin-bottom: 15px; }
@@ -1025,6 +1028,24 @@ input[type="number"] { -moz-appearance: textfield; }
 
 @media (min-width: 992px) { .features .feature { padding: 0 60px; }
   .features .feature.margined { margin-top: 100px; } }
+
+.choose-cover-box { background: #f2f3f7; }
+
+.choose-cover-box .covers .cover { text-align: center; }
+
+.choose-cover-box .covers .cover .cover-image-block { position: relative; top: 0; border: 10px solid white; margin-bottom: 20px; transition: 350ms ease-in-out; }
+
+.choose-cover-box .covers .cover .cover-image-block::before, .choose-cover-box .covers .cover .cover-image-block::after { content: ""; display: block; height: 50px; width: 50px; position: absolute; top: -10px; right: -10px; }
+
+.choose-cover-box .covers .cover .cover-image-block::before { background: white; }
+
+.choose-cover-box .covers .cover .cover-image-block::after { transition: 300ms; background: url("../images/check-gray.svg") center no-repeat; opacity: 0.3; }
+
+@media (min-width: 992px) { .choose-cover-box { position: relative; padding: 30px 0 100px; background: url("../images/leaves.svg") top right no-repeat, #f2f3f7; }
+  .choose-cover-box .covers .cover { cursor: pointer; }
+  .choose-cover-box .covers .cover:hover .cover-image-block { top: -20px; box-shadow: 0 53px 100px 0 rgba(39, 41, 45, 0.26); }
+  .choose-cover-box .covers .cover:hover .cover-image-block::after { opacity: 1; }
+  .choose-cover-box::before { content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: 0; transform: rotate(180deg); background: url("../images/leaves.svg") 105% -25px no-repeat; } }
 
 html { position: relative; min-height: 100vh; box-sizing: border-box; }
 

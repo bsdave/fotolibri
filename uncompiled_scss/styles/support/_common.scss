@@ -23,6 +23,10 @@
   color: #767A85;
   margin-top: 0;
   margin-bottom: 20px;
+
+  &.big {
+    font-size: 15px;
+  }
 }
 
 .blue-background {
@@ -85,6 +89,10 @@
   .description {
     font-size: 15px;
     line-height: 25px;
+
+    &.big {
+      font-size: 18px;
+    }
   }
 
   .main-logo {
