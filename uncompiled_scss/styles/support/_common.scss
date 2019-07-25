@@ -10,10 +10,16 @@
   color: #27292D;
   margin-top: 0;
   margin-bottom: 20px;
+
+  &.small {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
 }
 
 .description {
   font-size: 13px;
+  line-height: 20px;
   color: #767A85;
   margin-top: 0;
   margin-bottom: 20px;
@@ -44,28 +50,41 @@
 }
 
 .only-mobile {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .only-desktop {
-  display: none;
+  display: none !important;
+}
+
+.box-header {
+  background: url('../images/square.svg') center top no-repeat;
+  padding-top: 20px;
+  margin-top: 30px;
+  text-align: center;
 }
 
 @include desktop {
   .only-mobile {
-    display: none;
+    display: none !important;
   }
 
   .only-desktop {
-    display: inline-block;
+    display: inline-block !important;
   }
 
   .title {
     font-size: 35px;
+
+    &.small {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
   }
   
   .description {
     font-size: 15px;
+    line-height: 25px;
   }
 
   .main-logo {

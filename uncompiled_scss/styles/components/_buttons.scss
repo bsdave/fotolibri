@@ -39,6 +39,11 @@
     color: $color-black;
     background: $color-white;
   }
+
+  &.w100 {
+    width: 100%;
+    max-width: none;
+  }
 }
 
 .modal {
@@ -108,7 +113,7 @@
           display: block;
           width: 70px;
           height: 70px;
-          border: 1px solid #E7E9F1;
+          border: 1px solid #e7e9f1;
           position: absolute;
           margin: 5px;
           border-radius: 50%;
@@ -129,6 +134,11 @@
   height: 28px;
   width: 40px;
   background: url("../images/image-link.svg") left top no-repeat;
+
+  &:after {
+    content: "";
+    background: url("../images/image-link-hover.svg");
+  }
 }
 
 @include desktop {

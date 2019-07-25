@@ -35,7 +35,7 @@ $(function () {
         $('.photo-cart.uploading').removeClass('uploading');
         $('.button.disabled').removeClass('disabled');
       };
-    }, 30)
+    }, 20)
   })(0);
   // TODO remove!! Only for test sample
 

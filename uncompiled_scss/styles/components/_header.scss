@@ -1,9 +1,8 @@
 .header {
-  background: $color-white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-top: 20px;
 
   .navigation {
     display: none;
@@ -12,7 +11,12 @@
 
 @include tablet {
   .header {
-    padding: 10px 40px;
+    background: $color-white;
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+
+    padding: 16px 40px 15px;
     .navigation {
       display: flex;
       align-items: center;

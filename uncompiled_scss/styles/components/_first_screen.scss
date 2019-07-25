@@ -1,0 +1,55 @@
+.first-screen-box {
+  margin-top: -81px;
+  padding: 100px 0 50px;
+  background: url("../images/first-screen-bg.svg") 184px -20px no-repeat, #f2f3f7;
+  background-size: 70%;
+
+  .first-screen-preview {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .first-screen-image {
+      object-fit: cover;
+      object-position: -40px 50%;
+      width: 110%;
+    }
+
+    .round-button.play {
+      position: absolute;
+      margin: auto;
+    }
+  }
+}
+
+@include desktop {
+  .first-screen-box {
+    background: url("../images/first-screen-flower.png") bottom right no-repeat,
+      url("../images/first-screen-bg.svg") top right no-repeat, #f2f3f7;
+    background-size: 200px, 28%, auto;
+
+    margin-top: -120px;
+    padding-top: 200px;
+
+    .title {
+      font-size: 40px;
+      padding-right: 10%;
+    }
+
+    .features {
+      display: flex;
+      margin-bottom: 30px;
+
+      .feature {
+        background: url('../images/square-gray.svg') left center no-repeat;
+        margin-right: 15px;
+        padding-left: 20px;
+        display: block;
+        color: #767A85;
+        font-size: 18px;
+        
+      }
+    }
+  }
+}
