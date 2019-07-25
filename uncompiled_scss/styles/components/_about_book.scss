@@ -36,6 +36,7 @@
 @include desktop {
   .about-book-box {
     padding-top: 50px;
+    padding-bottom: 175px;
     background: url("../images/gray-fabric.png") left bottom no-repeat,
       url("../images/gray-book.png") right bottom no-repeat, url("../images/white-bird-0.svg") 18% center no-repeat,
       url("../images/white-bird-1.svg") 78% center no-repeat;
@@ -46,7 +47,7 @@
       align-items: center;
       flex-direction: column;
 
-      margin-top: 80px;
+      margin-top: 100px;
     }
   }
 }

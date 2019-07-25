@@ -31,7 +31,14 @@
 @include desktop {
   .how-it-works-box {
     background: url("../images/bird.svg") center bottom no-repeat;
-    padding: 80px 0;
+    padding: 70px 0 105px;
+
+    .box-header {
+      margin-bottom: 0;
+      .description {
+        margin-bottom: 0;
+      }
+    }
   }
 
   .features {

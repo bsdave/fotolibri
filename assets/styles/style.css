@@ -918,7 +918,8 @@ input[type="number"] { -moz-appearance: textfield; }
   .header .navigation .menu-link:not(:last-child) { margin-right: 10px; }
   .header .navigation .menu-link:last-child { border-left: 1px solid #f4f4f4; padding-left: 10px; margin-left: 0; } }
 
-@media (min-width: 992px) { .header .navigation .menu-link { margin-left: 25px; transition: 300ms; }
+@media (min-width: 992px) { .header { margin-top: 25px; }
+  .header .navigation .menu-link { margin-left: 25px; transition: 300ms; }
   .header .navigation .menu-link:not(:last-child) { margin-right: 25px; }
   .header .navigation .menu-link:last-child { padding-left: 25px; }
   .header .navigation .menu-link:hover { color: #564545; } }
@@ -1023,10 +1024,12 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .first-screen-box .first-screen-preview .round-button.play { position: absolute; margin: auto; }
 
-@media (min-width: 992px) { .first-screen-box { background: url("../images/first-screen-flower.png") bottom right no-repeat, url("../images/first-screen-bg.svg") top right no-repeat, #f2f3f7; background-size: 200px, 28%, auto; margin-top: -120px; padding-top: 200px; }
+@media (min-width: 992px) { .first-screen-box { background: url("../images/first-screen-flower.png") bottom right no-repeat, url("../images/first-screen-bg.svg") top right no-repeat, #f2f3f7; background-size: 200px, 28%, auto; margin-top: -125px; padding-top: 180px; padding-bottom: 33px; }
   .first-screen-box .title { font-size: 40px; padding-right: 10%; }
   .first-screen-box .features { display: flex; margin-bottom: 30px; }
-  .first-screen-box .features .feature { background: url("../images/square-gray.svg") left center no-repeat; margin-right: 15px; padding-left: 20px; display: block; color: #767A85; font-size: 18px; } }
+  .first-screen-box .features .feature { background: url("../images/square-gray.svg") left center no-repeat; margin-right: 15px; padding-left: 20px; display: block; color: #767A85; font-size: 18px; margin-bottom: 10px; }
+  .first-screen-box .first-screen-left { margin-top: 46px; }
+  .first-screen-box .first-screen-left .title { margin-bottom: 40px; } }
 
 .how-it-works-box { background: url("../images/bird.svg") center bottom no-repeat; padding: 20px 0 32px; }
 
@@ -1037,7 +1040,9 @@ input[type="number"] { -moz-appearance: textfield; }
 @media (min-width: 576px) { .how-it-works-box { background: url("../images/bird.svg") center bottom no-repeat; background-size: 50%; padding: 20px 0 40px; }
   .features .feature { text-align: center; } }
 
-@media (min-width: 992px) { .how-it-works-box { background: url("../images/bird.svg") center bottom no-repeat; padding: 80px 0; }
+@media (min-width: 992px) { .how-it-works-box { background: url("../images/bird.svg") center bottom no-repeat; padding: 70px 0 105px; }
+  .how-it-works-box .box-header { margin-bottom: 0; }
+  .how-it-works-box .box-header .description { margin-bottom: 0; }
   .features .feature { padding: 0 60px; }
   .features .feature.margined { margin-top: 100px; } }
 
@@ -1053,7 +1058,8 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .choose-cover-box .covers .cover .cover-image-block::after { transition: 300ms; background: url("../images/check-gray.svg") center no-repeat; opacity: 0.3; }
 
-@media (min-width: 992px) { .choose-cover-box { position: relative; padding: 30px 0 100px; background: url("../images/leaves.svg") top right no-repeat; }
+@media (min-width: 992px) { .choose-cover-box { position: relative; padding: 44px 0 60px; background: url("../images/leaves.svg") top right no-repeat; }
+  .choose-cover-box .covers { padding-top: 25px; }
   .choose-cover-box .covers .cover { cursor: pointer; }
   .choose-cover-box .covers .cover:hover .cover-image-block { top: -20px; box-shadow: 0 53px 100px 0 rgba(39, 41, 45, 0.26); }
   .choose-cover-box .covers .cover:hover .cover-image-block::after { opacity: 1; }
@@ -1066,8 +1072,8 @@ input[type="number"] { -moz-appearance: textfield; }
 @media (min-width: 576px) { .about-book-box { padding-top: 40px; padding-bottom: 40px; background: url("../images/gray-fabric.png") left bottom no-repeat, url("../images/gray-book.png") right bottom no-repeat, url("../images/white-bird-0.svg") 18% center no-repeat, url("../images/white-bird-1.svg") 78% center no-repeat; background-size: 30%, 30%, 20%, 20%; }
   .about-book-box .about-book { display: flex; align-items: center; flex-direction: column; margin-top: 20px; } }
 
-@media (min-width: 992px) { .about-book-box { padding-top: 50px; background: url("../images/gray-fabric.png") left bottom no-repeat, url("../images/gray-book.png") right bottom no-repeat, url("../images/white-bird-0.svg") 18% center no-repeat, url("../images/white-bird-1.svg") 78% center no-repeat; background-size: 30%, 30%, 20%, 20%; }
-  .about-book-box .about-book { display: flex; align-items: center; flex-direction: column; margin-top: 80px; } }
+@media (min-width: 992px) { .about-book-box { padding-top: 50px; padding-bottom: 175px; background: url("../images/gray-fabric.png") left bottom no-repeat, url("../images/gray-book.png") right bottom no-repeat, url("../images/white-bird-0.svg") 18% center no-repeat, url("../images/white-bird-1.svg") 78% center no-repeat; background-size: 30%, 30%, 20%, 20%; }
+  .about-book-box .about-book { display: flex; align-items: center; flex-direction: column; margin-top: 100px; } }
 
 .reviews-box { background: url("../images/leaves.svg") center top no-repeat, #f2f3f7; padding: 20px 0 60px; }
 
@@ -1091,9 +1097,9 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .reviews-box .reviews-body .reviews .review .description { line-height: 25px; }
 
-@media (min-width: 992px) { .reviews-box { background: #f2f3f7; padding: 40px 0 100px; background: url("../images/leaves.svg") center top no-repeat, #f2f3f7; background-size: 100% 100%, auto; }
+@media (min-width: 992px) { .reviews-box { background: #f2f3f7; padding: 50px 0 108px; background: url("../images/leaves.svg") center top no-repeat, #f2f3f7; background-size: 100% 100%, auto; }
   .reviews-box .reviews-body { background: white; border-radius: 7px; }
-  .reviews-box .reviews-body .reviews .review { padding: 20px 100px 50px; } }
+  .reviews-box .reviews-body .reviews .review { padding: 20px 100px 10px; } }
 
 .order-box { position: relative; background: url("../images/pencil.png") 200% bottom no-repeat; background-size: 70%; padding: 22px 0 33px; }
 
@@ -1103,7 +1109,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .order-box::before { content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1; transform: rotate(180deg); background: url("../images/pencil.png") 200% bottom no-repeat, #7598ff; background-size: 70%; }
 
-@media (min-width: 992px) { .order-box { position: relative; background: url("../images/pencil.png") right bottom no-repeat; background-size: 30%; padding: 50px 0 80px; }
+@media (min-width: 992px) { .order-box { position: relative; background: url("../images/pencil.png") right bottom no-repeat; background-size: 30%; padding: 50px 0 86px; }
   .order-box .box-header { padding-left: 50px; padding-right: 50px; }
   .order-box .box-header .description { padding: 0 20%; }
   .order-box .box-header .title, .order-box .box-header .description { color: white !important; }
@@ -1120,11 +1126,11 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .footer .footer-menu .footer-link { display: block; color: #767a85; text-decoration: none; font-size: 15px; margin-bottom: 27px; }
 
-.footer .bottom { position: absolute; bottom: 10px; right: 0; left: 0; text-align: center; }
+.footer .bottom { position: absolute; bottom: 18px; right: 0; left: 0; text-align: center; }
 
 .footer .bottom .copyright { color: #adb1bc; font-size: 13px; }
 
-@media (min-width: 992px) { .footer { background: url("../images/white-bird-0.svg") 90% 30% no-repeat, url("../images/white-bird-1.svg") 10% 150% no-repeat, #f2f3f7; background-size: 200px, 230px, auto; }
+@media (min-width: 992px) { .footer { background: url("../images/white-bird-0.svg") 90% 30% no-repeat, url("../images/white-bird-1.svg") 10% 150% no-repeat, #f2f3f7; background-size: 200px, 230px, auto; padding-top: 100px; padding-bottom: 112px; }
   .footer .footer-menu { padding: 20px 5px; margin-bottom: 30px; border-bottom: 1px solid #e3e6ef; width: 100%; text-align: center; display: flex; flex-direction: row; align-content: center; justify-content: center; align-items: center; }
   .footer .footer-menu .footer-link { display: inline-block; color: #767a85; text-decoration: none; font-size: 15px; margin-bottom: 15px; margin-right: 20px; margin-left: 20px; transition: 300ms; }
   .footer .footer-menu .footer-link:hover { color: #564545; }

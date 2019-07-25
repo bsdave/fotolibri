@@ -30,9 +30,10 @@
       url("../images/first-screen-bg.svg") top right no-repeat, #f2f3f7;
     background-size: 200px, 28%, auto;
 
-    margin-top: -120px;
-    padding-top: 200px;
-
+    margin-top: -125px;
+    padding-top: 180px;
+    padding-bottom: 33px;
+    
     .title {
       font-size: 40px;
       padding-right: 10%;
@@ -49,7 +50,14 @@
         display: block;
         color: #767A85;
         font-size: 18px;
-        
+        margin-bottom: 10px;
+      }
+    }
+
+    .first-screen-left {
+      margin-top: 46px;
+      .title {
+        margin-bottom: 40px;
       }
     }
   }

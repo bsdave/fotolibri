@@ -43,10 +43,12 @@
 @include desktop {
   .choose-cover-box {
     position: relative;
-    padding: 30px 0 100px;
+    padding: 44px 0 60px;
     background: url("../images/leaves.svg") top right no-repeat;
 
     .covers {
+      padding-top: 25px;
+
       .cover {
         cursor: pointer;
 

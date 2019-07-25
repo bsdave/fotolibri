@@ -36,7 +36,7 @@
 
   .bottom {
     position: absolute;
-    bottom: 10px;
+    bottom: 18px;
     right: 0;
     left: 0;
     text-align: center;
@@ -53,6 +53,8 @@
     background: url("../images/white-bird-0.svg") 90% 30% no-repeat,
       url("../images/white-bird-1.svg") 10% 150% no-repeat, #f2f3f7;
     background-size: 200px, 230px, auto;
+    padding-top: 100px;
+    padding-bottom: 112px;
 
     .footer-menu {
       padding: 20px 5px;
