@@ -1,0 +1,80 @@
+.reviews-box {
+  background: #f2f3f7;
+  padding: 20px 0 50px;
+
+  .reviews-body {
+    position: relative;
+    background: white;
+    border-radius: 7px;
+    padding: 20px;
+
+    .reviews-control {
+      overflow: hidden;
+
+      .reviewer-image {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .reviewer-img {
+          height: 60px;
+          width: 60px;
+        }
+      }
+    }
+
+    .reviews {
+      .review {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 20px 50px;
+        text-align: center;
+
+        .rating {
+          .star {
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            background: url("../images/star.svg") center no-repeat;
+            opacity: 0.5;
+
+            &.avtive {
+              opacity: 1;
+            }
+          }
+        }
+
+        .description {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .reviews-box {
+    background: #f2f3f7;
+    padding: 40px 0 100px;
+    background: url('../images/leaves.svg') center top no-repeat, #f2f3f7;
+    background-size: 100% 100%, auto;
+
+    .reviews-body {
+      background: white;
+      border-radius: 7px;
+
+      .reviews-control {
+        .reviewer-image {
+        }
+      }
+
+      .reviews {
+        .review {
+          padding: 20px 100px 50px;
+        }
+      }
+    }
+  }
+}

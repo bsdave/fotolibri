@@ -1,10 +1,10 @@
 @import "grid/main";
+@import "styles/support/variables";
+@import "styles/support/mixins";
 @import "slick/main";
 
 @import "styles/support/normalize";
-@import "styles/support/variables";
 @import "styles/support/fonts";
-@import "styles/support/mixins";
 @import "styles/support/grid";
 @import "styles/support/common";
 
@@ -19,6 +19,7 @@
 @import "styles/components/how_it_works";
 @import "styles/components/choose_cover_box";
 @import "styles/components/about_book";
+@import "styles/components/reviews";
 
 html {
   position: relative;

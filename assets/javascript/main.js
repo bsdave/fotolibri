@@ -21,14 +21,36 @@ $(function () {
     $(this).addClass('choosed');
   });
 
+  $('.reviews-control').slick({
+    asNavFor: '.reviews',
+    focusOnSelect: true,
+    accessibility: true,
+    arrows: true,
+    slidesToShow: 1,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
+    centerMode: true
+  });
+
+  $('.reviews').slick({
+    asNavFor: '.reviews-control',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
+  });
+
+
   // TODO remove!! Only for test sample
   (function myLoop(i) {
     setTimeout(function () {
-      $('.photo-cart.uploading').find('.percents').text(`${i}%`);  
-      $('.photo-cart.uploading').find('.progress-value').css('width', `${i}%`);   
-      
+      $('.photo-cart.uploading').find('.percents').text(`${i}%`);
+      $('.photo-cart.uploading').find('.progress-value').css('width', `${i}%`);
+
       i += Math.round(Math.random(8));
-      
+
       if (i <= 100) {
         myLoop(i)
       } else {

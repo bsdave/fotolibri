@@ -1,2 +1,53 @@
-@import 'slick_theme';
-@import 'slick';
+@import "slick";
+
+.slick-slide {
+  margin: 0 40px;
+}
+
+.slick-list {
+  margin: 0 -40px;
+}
+
+.prev,
+.next {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 59px;
+  height: 59px;
+  background: url("../images/arrow-slick.svg") center no-repeat, white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.prev {
+  top: 20px;
+  left: 40px;
+}
+
+.next {
+  top: 20px;
+  right: 40px;
+  transform: rotate(180deg);
+}
+
+@include desktop {
+  .slick-slide {
+    margin: 0 20px;
+  }
+  
+  .slick-list {
+    margin: 0 -20px;
+  }
+
+  .prev {
+    top: calc(50% - 24px);
+    left: -80px;
+  }
+  
+  .next {
+    top: calc(50% - 24px);
+    right: -80px;
+    transform: rotate(180deg);
+  }
+}

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .container { width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }
 
 @media (min-width: 576px) { .container { max-width: 540px; } }
@@ -549,26 +548,6 @@
 
 html { box-sizing: border-box; -ms-overflow-style: scrollbar; }
 
-/* Icons */
-@font-face { font-family: "slick"; src: url("./fonts/slick.eot"); src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg"); font-weight: normal; font-style: normal; }
-
-/* Dots */
-.slick-dotted.slick-slider { margin-bottom: 30px; }
-
-.slick-dots { list-style: none; display: block; padding: 0; margin: 0; width: 100%; }
-
-.slick-dots li { position: relative; display: inline-block; height: 20px; width: 20px; margin: 10px; padding: 0; cursor: pointer; }
-
-.slick-dots li button { border: 0; background: transparent; display: block; height: 20px; width: 20px; outline: none; line-height: 0px; font-size: 0px; color: transparent; padding: 5px; cursor: pointer; }
-
-.slick-dots li button:hover, .slick-dots li button:focus { outline: none; }
-
-.slick-dots li button:hover:before, .slick-dots li button:focus:before { opacity: 1; }
-
-.slick-dots li button:before { position: absolute; top: 0; left: 0; content: "•"; width: 20px; height: 20px; font-family: "slick"; font-size: 60px; line-height: 20px; text-align: center; color: black; opacity: 0.5; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-
-.slick-dots li.slick-active button:before { color: #ff0000; opacity: 1; }
-
 /* Slider */
 .slick-slider { position: relative; display: block; box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
@@ -580,7 +559,7 @@ html { box-sizing: border-box; -ms-overflow-style: scrollbar; }
 
 .slick-slider .slick-track, .slick-slider .slick-list { transform: translate3d(0, 0, 0); }
 
-.slick-track { position: relative; left: 0; top: 0; display: block; margin-left: auto; margin-right: auto; }
+.slick-track { position: relative; left: 0; top: 0; display: flex; align-items: center; justify-content: center; margin-left: auto; margin-right: auto; }
 
 .slick-track:before, .slick-track:after { content: ""; display: table; }
 
@@ -605,6 +584,21 @@ html { box-sizing: border-box; -ms-overflow-style: scrollbar; }
 .slick-vertical .slick-slide { display: block; height: auto; border: 1px solid transparent; }
 
 .slick-arrow.slick-hidden { display: none; }
+
+.slick-slide { margin: 0 40px; }
+
+.slick-list { margin: 0 -40px; }
+
+.prev, .next { content: ""; display: block; position: absolute; width: 59px; height: 59px; background: url("../images/arrow-slick.svg") center no-repeat, white; border-radius: 50%; cursor: pointer; }
+
+.prev { top: 20px; left: 40px; }
+
+.next { top: 20px; right: 40px; transform: rotate(180deg); }
+
+@media (min-width: 992px) { .slick-slide { margin: 0 20px; }
+  .slick-list { margin: 0 -20px; }
+  .prev { top: calc(50% - 24px); left: -80px; }
+  .next { top: calc(50% - 24px); right: -80px; transform: rotate(180deg); } }
 
 /* ========================================================================== Normalize.scss settings ========================================================================== */
 /** Includes legacy browser support IE6/7 Set to false if you want to drop support for IE6 and IE7 */
@@ -1060,6 +1054,28 @@ input[type="number"] { -moz-appearance: textfield; }
 
 @media (min-width: 992px) { .about-book-box { padding-top: 50px; background: url("../images/gray-fabric.png") left bottom no-repeat, url("../images/gray-book.png") right bottom no-repeat, url("../images/white-bird-0.svg") 18% center no-repeat, url("../images/white-bird-1.svg") 78% center no-repeat; background-size: 30%, 30%, 20%, 20%; }
   .about-book-box .about-book { display: flex; align-items: center; flex-direction: column; margin-top: 80px; } }
+
+.reviews-box { background: #f2f3f7; padding: 20px 0 50px; }
+
+.reviews-box .reviews-body { position: relative; background: white; border-radius: 7px; padding: 20px; }
+
+.reviews-box .reviews-body .reviews-control { overflow: hidden; }
+
+.reviews-box .reviews-body .reviews-control .reviewer-image { display: flex; justify-content: center; width: 100%; }
+
+.reviews-box .reviews-body .reviews-control .reviewer-image .reviewer-img { height: 60px; width: 60px; }
+
+.reviews-box .reviews-body .reviews .review { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px 20px 50px; text-align: center; }
+
+.reviews-box .reviews-body .reviews .review .rating .star { display: inline-block; height: 10px; width: 10px; background: url("../images/star.svg") center no-repeat; opacity: 0.5; }
+
+.reviews-box .reviews-body .reviews .review .rating .star.avtive { opacity: 1; }
+
+.reviews-box .reviews-body .reviews .review .description { font-size: 15px; }
+
+@media (min-width: 992px) { .reviews-box { background: #f2f3f7; padding: 40px 0 100px; background: url("../images/leaves.svg") center top no-repeat, #f2f3f7; background-size: 100% 100%, auto; }
+  .reviews-box .reviews-body { background: white; border-radius: 7px; }
+  .reviews-box .reviews-body .reviews .review { padding: 20px 100px 50px; } }
 
 html { position: relative; min-height: 100vh; box-sizing: border-box; }
 
