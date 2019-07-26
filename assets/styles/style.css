@@ -887,7 +887,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 @media (min-width: 992px) { .input-group { margin-top: 45px; margin-bottom: 45px; } }
 
-.modal-box { position: fixed; left: 0; right: 0; top: -1400px; z-index: -1; overflow-y: scroll; transition: 500ms ease-in-out; }
+.modal-box { position: fixed; left: 0; right: 0; top: -1400px; z-index: -1; overflow-y: scroll; transition: 300ms; }
 
 .modal-box .modal { z-index: 15; position: relative; background: #f2f3f7; padding: 25px; border-radius: 10px; margin-top: 10vh; margin-bottom: 10vh; box-shadow: 0 53px 100px 0 rgba(39, 31, 45, 0.36); }
 
@@ -1139,7 +1139,7 @@ input[type="number"] { -moz-appearance: textfield; }
   .footer .footer-menu .footer-link:hover { color: #564545; }
   .footer .bottom .copyright { font-size: 15px; } }
 
-.video-modal-box { position: fixed; transition: 400ms ease-in-out; top: -1400px; overflow-y: scroll; left: 0; right: 0; z-index: 887; }
+.video-modal-box { position: fixed; transition: 300ms; top: -1400px; overflow-y: scroll; left: 0; right: 0; z-index: 887; }
 
 .video-modal-box.show { top: 0; bottom: 0; }
 
