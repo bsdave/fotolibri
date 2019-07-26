@@ -42,6 +42,19 @@ $(function () {
     nextArrow: $('.next'),
   });
 
+  $('.close-link').click(function () {
+    $('body').removeClass('overlay');
+    $(this).parents(".video-modal-box").find( "iframe" ).attr('src', $('iframe').attr('src'));
+    $(this).parents(".video-modal-box").removeClass('show');
+  });
+
+  $('.round-button.play').click(function () {
+    let videoPreviewId = $(this).data('videoPreview');
+    if (!videoPreviewId) { return };
+
+    $('body').toggleClass('overlay');
+    $(`#video-preview-${videoPreviewId}`).toggleClass('show');
+  });
 
   // TODO remove!! Only for test sample
   (function myLoop(i) {
@@ -55,7 +68,7 @@ $(function () {
         myLoop(i)
       } else {
         $('.photo-cart.uploading').removeClass('uploading');
-        $('.button.disabled').removeClass('disabled');
+        $('#send-images').removeClass('disabled');
       };
     }, 20)
   })(0);

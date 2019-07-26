@@ -813,6 +813,8 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .button.white { color: #000; background: #FFF; }
 
+.button.white.disabled { pointer-events: none; background: #FFF !important; }
+
 .button.w100 { width: 100%; max-width: none; }
 
 .modal .button { max-width: unset; }
@@ -837,6 +839,10 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .round-button.play.white::after { content: url("../images/play.svg"); margin: auto; -webkit-filter: brightness(0%); filter: brightness(0%); }
 
+.round-button.play.disabled { background: #d2d6e5 !important; pointer-events: none; }
+
+.round-button.play.disabled:hover::after { -webkit-filter: none !important; filter: none !important; }
+
 .image-link { display: block; height: 28px; width: 40px; background: url("../images/image-link.svg") left top no-repeat; }
 
 .image-link:after { content: ""; background: url("../images/image-link-hover.svg"); }
@@ -845,7 +851,6 @@ input[type="number"] { -moz-appearance: textfield; }
   .button:not(.disabled):active { transform: scale(0.98); }
   .button.white:hover { background: #e8eeff; }
   .button.white:not(.disabled):active { background: #FFF; }
-  .button.white.disabled { pointer-events: none; background: #FFF !important; }
   .round-button:active::after { -webkit-filter: brightness(0%) !important; filter: brightness(0%) !important; }
   .round-button:not(.disabled):hover::after { -webkit-filter: none; filter: none; }
   .round-button.play { transition: 200ms; }
@@ -854,8 +859,6 @@ input[type="number"] { -moz-appearance: textfield; }
   .round-button.play:not(.disabled):hover::after { -webkit-filter: none !important; filter: none !important; }
   .round-button.play:not(.disabled):active { transform: scale(1); border: none; }
   .round-button.play:not(.disabled):active::before { content: ""; display: block; width: 70px; height: 70px; border: 1px solid #8ba8fc; position: absolute; margin: 5px; border-radius: 50%; }
-  .round-button.play.disabled { background: #d2d6e5 !important; pointer-events: none; }
-  .round-button.play.disabled:hover::after { -webkit-filter: none !important; filter: none !important; }
   .image-link:hover { background: url("../images/image-link-hover.svg") left top no-repeat; } }
 
 .input-group { position: relative; margin-top: 30px; margin-bottom: 30px; }
@@ -1136,8 +1139,30 @@ input[type="number"] { -moz-appearance: textfield; }
   .footer .footer-menu .footer-link:hover { color: #564545; }
   .footer .bottom .copyright { font-size: 15px; } }
 
+.video-modal-box { position: fixed; transition: 400ms ease-in-out; top: -1999px; overflow-y: scroll; left: 0; right: 0; z-index: 887; }
+
+.video-modal-box.show { top: 0; bottom: 0; }
+
+.video-modal-box .centered { position: relative; height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; height: 100%; }
+
+.video-modal { position: relative; z-index: 888; width: 100%; background: transparent; }
+
+.video-modal .modal-body { position: relative; width: 100%; height: 0; padding-bottom: 56.25%; }
+
+.video-modal .modal-body iframe { display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.video-modal .modal-body .close-link { position: absolute; right: 10px; top: -30px; -webkit-filter: brightness(10); filter: brightness(10); }
+
+@media (min-width: 576px) { .video-modal-box { top: -1999px; }
+  .video-modal-box.show { top: 0; bottom: 0; }
+  .video-modal { width: 80%; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; margin-top: 100px; margin-bottom: 100px; box-shadow: 0 -10px 62px 0 #2326294d; }
+  .video-modal .modal-body .close-link { right: -25px; top: -25px; } }
+
+@media (min-width: 992px) { .video-modal { box-shadow: 0 -10px 62px 0 #2326294d; }
+  .video-modal .modal-body .close-link:hover { cursor: pointer; } }
+
 html { position: relative; min-height: 100vh; box-sizing: border-box; }
 
 body { font-family: "Raleway", sans-serif; font-size: 13px; }
 
-body.overlay::before { content: ""; position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 5; background: black; opacity: 0.2; }
+body.overlay::before { content: ""; position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 5; background: black; opacity: 0.3; }

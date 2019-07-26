@@ -38,6 +38,12 @@
   &.white {
     color: $color-black;
     background: $color-white;
+
+    &.disabled {
+      pointer-events: none;
+
+      background: $color-white !important;
+    }
   }
 
   &.w100 {
@@ -126,6 +132,17 @@
         filter: brightness(0%);
       }
     }
+
+    &.disabled {
+      background: #d2d6e5 !important;
+      pointer-events: none;
+
+      &:hover {
+        &::after {
+          filter: none !important;
+        }
+      }
+    }
   }
 }
 
@@ -162,12 +179,6 @@
         &:active {
           background: $color-white;
         }
-      }
-
-      &.disabled {
-        pointer-events: none;
-
-        background: $color-white !important;
       }
     }
   }
@@ -218,17 +229,6 @@
             position: absolute;
             margin: 5px;
             border-radius: 50%;
-          }
-        }
-      }
-
-      &.disabled {
-        background: #d2d6e5 !important;
-        pointer-events: none;
-
-        &:hover {
-          &::after {
-            filter: none !important;
           }
         }
       }
