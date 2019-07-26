@@ -1,9 +1,11 @@
 .modal-box {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
-  top: -10000px;
+  top: -1400px;
   z-index: -1;
+  overflow-y: scroll;
+  transition: 500ms ease-in-out;
 
   .modal {
     z-index: 15;
@@ -12,6 +14,7 @@
     padding: 25px;
     border-radius: 10px;
     margin-top: 10vh;
+    margin-bottom: 10vh;
     box-shadow: 0 53px 100px 0 rgba(39, 31, 45, 0.36);
 
     .modal-header {
@@ -29,7 +32,7 @@
     }
 
     .modal-body {
-      margin-top: 60px;
+      margin-top: 20px;
     }
 
     &.order {
@@ -67,7 +70,7 @@
       }
 
       .modal-body {
-        margin-top: 80px;
+        margin-top: 40px;
       }
     }
   }

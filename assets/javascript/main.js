@@ -1,5 +1,6 @@
 $(function () {
   $('.open-modal').click(function () {
+    event.preventDefault();
     $('body').addClass('overlay');
     $(`#${$(this).data('modal-id')}`).addClass('opened');
   });
@@ -42,18 +43,23 @@ $(function () {
     nextArrow: $('.next'),
   });
 
-  $('.close-link').click(function () {
-    $('body').removeClass('overlay');
-    $(this).parents(".video-modal-box").find( "iframe" ).attr('src', $('iframe').attr('src'));
-    $(this).parents(".video-modal-box").removeClass('show');
-  });
 
   $('.round-button.play').click(function () {
+    event.preventDefault();
+
     let videoPreviewId = $(this).data('videoPreview');
     if (!videoPreviewId) { return };
 
-    $('body').toggleClass('overlay');
-    $(`#video-preview-${videoPreviewId}`).toggleClass('show');
+    $('body').addClass('overlay');
+    $(`#video-preview-${videoPreviewId}`).addClass('show');
+  });
+
+  $('.close-link').click(function () {
+    $(this).parents(".video-modal-box").find("iframe").attr('src', $('iframe').attr('src'));
+    $(this).parents(".video-modal-box").removeClass('show');
+    if ($('.modal-box.opened').length == 0) {
+      $('body').removeClass('overlay');
+    }
   });
 
   // TODO remove!! Only for test sample

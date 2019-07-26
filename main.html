@@ -42,17 +42,17 @@
                 <span class="feature">Еще какая-то фича</span>
               </div>
 
-              <a href="#" class="button order">Хочу такую!</a>
+              <a href="#" class="button order open-modal" data-modal-id="order-modal">Хочу такую!</a>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-6">
           <div class="first-screen-preview">
             <img src="assets/images/first-screen-book.png" class="img-block first-screen-image">
-            <a href="#" class="round-button white play"></a>
+            <a href="#" class="round-button white play" data-video-preview="1"></a>
           </div>
 
-          <a href="#" class="button order w100 only-mobile">Хочу такую!</a>
+          <a href="#" class="button order w100 only-mobile open-modal" data-modal-id="order-modal">Хочу такую!</a>
         </div>
       </div>
     </div>
@@ -161,7 +161,7 @@
       </div>
 
       <div class="about-book">
-        <a href="#" class="round-button play"></a>
+        <a href="#" class="round-button play" data-video-preview="1"></a>
         <p class="description big">Посмотреть видео</p>
       </div>
     </div>
@@ -342,7 +342,7 @@
       </div>
 
       <div class="order-body">
-        <a href="#" class="button white">Создать фотокнигу</a>
+        <a href="#" class="button white open-modal" data-modal-id="order-modal">Создать фотокнигу</a>
 
       </div>
     </div>
@@ -366,6 +366,98 @@
 
     <div class="bottom"><span class="copyright">Fotolibri © 2019</span></div>
   </footer>
+
+  <div class="video-modal-box" id="video-preview-1">
+    <div class="centered">
+      <div class="video-modal">
+        <div class="modal-body">
+          <span class="close-link"><img src="assets/images/close-x.svg" alt=""></span>
+
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/CFVPW6oV67s" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal-box" id="order-modal">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="modal">
+            <div class="modal-header">
+              <span class="close-modal"></span>
+              <h3 class="title">Обложка с теснением</h3>
+              <p class="description">Выберете размер подарочной фотокниги</p>
+            </div>
+
+            <div class="modal-body">
+              <div class="carts">
+                <div class="row">
+
+                  <div class="col-12 col-md-4">
+                    <div class="cart">
+                      <div class="video-preview" style="background-image: url(assets/images/book-1.jpg);">
+                        <a href="#" class="round-button white play" data-video-preview="1"></a>
+                      </div>
+                      <div class="description-box">
+                        <div class="dimension">
+                          <span class="side-size">20</span>
+                          <span class="size-icon"></span>
+                          <span class="side-size">20</span>
+                        </div>
+                        <span class="price-string">Цена: <span class="price">10 k</span></span>
+                        <a href="#" class="button hand">Хочу такую!</a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-4">
+                    <div class="cart">
+                      <div class="video-preview" style="background-image: url(assets/images/book-2.jpg);">
+                        <a href="#" class="round-button white play" data-video-preview="1"></a>
+                      </div>
+                      <div class="description-box">
+                        <div class="dimension">
+                          <span class="side-size">20</span>
+                          <span class="size-icon"></span>
+                          <span class="side-size">20</span>
+                        </div>
+                        <span class="price-string">Цена: <span class="price">10 k</span></span>
+                        <a href="#" class="button hand">Хочу такую!</a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-4">
+                    <div class="cart">
+                      <div class="video-preview" style="background-image: url(assets/images/book-3.jpg);">
+                        <a href="#" class="round-button white play" data-video-preview="1"></a>
+                      </div>
+                      <div class="description-box">
+                        <div class="dimension">
+                          <span class="side-size">20</span>
+                          <span class="size-icon"></span>
+                          <span class="side-size">20</span>
+                        </div>
+                        <span class="price-string">Цена: <span class="price">10 k</span></span>
+                        <a href="#" class="button hand">Хочу такую!</a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 
